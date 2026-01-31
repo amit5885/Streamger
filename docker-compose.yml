@@ -1,0 +1,32 @@
+services:
+  api:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    image: streamger_backend
+    container_name: streamger_backend
+    env_file:
+      - ./backend/.env
+    environment:
+      PORT: 8000
+    ports:
+      - "8000:8000"
+    restart: unless-stopped
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    image: streamger_frontend
+    container_name: streamger_frontend
+    # env_file:
+    #   - ./frontend/.env
+    environment:
+      PORT: 3000
+      # backend reachable via Docker DNS
+      VITE_API_URL: http://api:8000
+    ports:
+      - "3000:3000"
+    depends_on:
+      - api
+    restart: unless-stopped

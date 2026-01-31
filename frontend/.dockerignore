@@ -1,0 +1,17 @@
+.git
+.gitignore
+
+.DS_Store
+Thumbs.db
+.idea
+.vscode
+
+*.log
+tmp
+temp
+
+docker-compose*.yml
+**/Dockerfile
+
+.env
+**/.env
