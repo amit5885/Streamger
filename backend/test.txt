@@ -1,8 +1,0 @@
-curl http://localhost:8000/api/trending
-curl "http://localhost:8000/api/search?query=matrix"
-curl http://localhost:8000/api/movie/603/videos
-curl -I http://localhost:8000/stream/video.mp4
-curl http://localhost:8000/api/now_playing
-curl http://localhost:8000/api/upcoming
-curl http://localhost:8000/api/popular_tv_shows
-curl http://localhost:8000/api/top_rated_movies
