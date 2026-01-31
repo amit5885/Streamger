@@ -11,7 +11,8 @@ Streamger is a full-stack web application combining a high-performance Rust back
 ## 🚀 Tech Stack
 
 ### Frontend
-- **Framework:** React 19
+- **Framework:** TanStack Start
+- **UI Library:** React 19
 - **Build Tool:** Vite
 - **Routing:** TanStack Router
 - **Styling:** Tailwind CSS 4
